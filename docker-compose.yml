@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  dont-genshin-bot:
+    build: .
+    env_file:
+      - config.env
+    logging:
+      options:
+        max-size: "1G"
+        max-file: "10"
+    restart: always
