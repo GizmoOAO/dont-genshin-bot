@@ -2,7 +2,7 @@ version: "3"
 
 services:
   dont-genshin-bot:
-    image: gizmooao/dont-genshin-bot:latest
+    build: .
     env_file:
       - config.env
     volumes:
