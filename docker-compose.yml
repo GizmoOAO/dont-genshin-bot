@@ -5,6 +5,8 @@ services:
     build: .
     env_file:
       - config.env
+    volumes:
+      - ./appdata:/home/app/appdata
     logging:
       options:
         max-size: "1G"
